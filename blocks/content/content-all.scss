@@ -1,0 +1,422 @@
+@import'../scss/variabl.scss';
+
+.main{
+    @extend %outerWidth;
+    .content-wrapper-prod{
+        @extend %innerWidth;
+        .slider-wrapper-prod{
+            @extend %displayFlexRow;
+            justify-content: space-between;
+            user-select: none;
+            margin:30px 0;
+            .sld-wrapp-wrapp{
+                width:100%;
+                max-width:910px;
+                
+                .slider-inner{
+                    @extend %displayFlexRow;
+                    justify-content: center;
+                    
+                    .imag-wrapp{
+                        img{
+                            max-width:10rem;
+                            max-height:16rem;
+                        }
+                    }
+                }
+            }
+            .btn-sld{
+                @extend %displayFlexRow;
+                min-height:400px;
+                cursor:pointer;
+                img{
+                    width:1rem;
+                }
+                &:active img{
+                    transform:scale(1.1)
+                }
+            }
+            .imag-wrapp{
+                @extend %displayFlexRow;
+            }
+            .description{
+                margin-left:10px;
+                p{
+                    margin:5px;
+                }
+                p:first-child{
+                    color:$footerColor;
+                    font-size:1rem;
+                }
+                p:nth-child(2){
+                    color:$btnColor;
+                    font-size:1.5rem;
+                    font-weight:600;
+                }
+                .ger-text{
+                    color:$textColor2;
+                    font-size:.75rem;
+                    width:100%;
+                    max-width:320px;
+                    text-align:justify;
+                }
+                .btn-cart{
+                    max-width:8rem;
+                    height:2rem;
+                    background:$btnColor;
+                    @extend %displayFlexRow;
+                    justify-content: center;
+                    cursor: pointer;
+                    margin-top:30px;
+                    p{
+                        color:$textColor;
+                        font-size:.6rem;
+                    }
+                    span{
+                        color:$textColor;
+                        margin-left:3px;
+                        font-size:.6rem;
+                    }
+                    &:active{
+                        transform: scale(1.03)
+                    }
+                }
+            }
+        }
+        .items-filter-wrapper{
+            @extend %displayFlexRow;
+            align-items: flex-start;
+            justify-content: center;
+            .all-items{
+                width:100%;
+                max-width:690px;
+                .select-menu{
+                    @extend %displayFlexRow;
+                    justify-content: space-between;
+                    margin-bottom:15px;
+                    padding-bottom:15px;
+                    
+                    border-bottom:1px solid $borderColor;
+                    .date-sort{
+                        @extend %displayFlexRow;
+                        p{
+                            font-size:.75rem;
+                        }
+                        select{
+                            font-size:.75rem;
+                            padding:5px;
+                            border:none;
+                            background:$borderColor;
+                            margin-left:5px;
+                            option{
+                                font-size:.75rem;
+                                padding:4px;
+                            }
+                        }
+                    }
+                    .showing-art-top{
+                        @extend %displayFlexRow;
+                        p{
+                            font-size:.75rem;
+                            span{
+                                font-size:.75rem;
+                                margin:0 3px;
+                            }
+                        }
+                        .select-next{
+                            @extend %displayFlexRow;
+                            justify-content: center;
+                            width:1.3rem;
+                            height:1.3rem;
+                            margin-left: 5px;
+                            font-size:.75rem;
+                            background:$borderColor;
+                            cursor:pointer;
+                            img{
+                                width:1rem;
+                            }
+                            &:hover{
+                                background: $footerColor;
+                            }
+                        }
+                    }
+                }
+                .general-content{
+                    .slider-wrapper{
+                        @extend %displayFlexRow;
+                        justify-content: center;
+                        .item-wrapper{
+                            width:100%;
+                            max-width:220px;
+                            margin:5px 5px;
+                            background:$bgEmFoo;
+                            position:relative;
+                            cursor:pointer;
+                            .info{
+                                background:$bgEmFoo;
+                                @extend %displayFlexCol;
+                                justify-content: space-between;
+                                p{
+                                    font-size:.7rem;
+                                    margin:2px 0;
+                                    color:$footerColor;
+                                    span{
+                                        font-size:.7rem;
+                                    }
+                                    
+                                }
+                                p:nth-child(2){
+                                    font-size:.9rem;
+                                    color:$footerColor;
+                                    span{
+                                        font-size:.9rem;
+                                    }
+                                }
+                                .item-btn{
+                                    width:120px;
+                                    height:30px;
+                                    background:$btnColor;
+                                    margin-bottom:5px;
+                                    padding:2px;
+                                    text-align:center;
+                                    color:$footerColor;
+                                    cursor:pointer;
+                                    user-select: none;
+                                    border:none;
+                                    border-bottom:2px solid $btnColorBottom;
+                                    font-size:.75rem;
+                                    &:active{
+                                        transform:scale(1.02)
+                                    }
+                                }
+                                .active-btn{
+                                    background: $btnColorBottom;
+                                    color:#000;
+                                }
+                            }
+                            &:hover {
+                                transform: scale(1.03);
+                                transition:all .5s linear;
+                            }
+                        }
+                    }
+                }
+                .select-menu-2{
+                    
+                    margin:30px 0;
+                    .showing-art-bottom{
+                        @extend %displayFlexRow;
+                        justify-content: flex-end;
+                        
+                        p{
+                            font-size:.75rem;
+                            span{
+                                font-size:.75rem;
+                                margin:0 3px;
+                            }
+                        }
+                        .select-next{
+                            @extend %displayFlexRow;
+                            justify-content: center;
+                            width:1.3rem;
+                            height:1.3rem;
+                            margin-left: 5px;
+                            font-size:.75rem;
+                            background:$borderColor;
+                            cursor:pointer;
+                            img{
+                                width:1rem;
+                            }
+                        }
+                    }
+                }
+            }
+            .filter-items{
+                width:100%;
+                max-width:270px;
+                margin-left:5px;
+                .categories{
+                    user-select: none;
+                    cursor: pointer;
+                    h1{
+                        font-size:.9rem;
+                        padding:4px 10px;
+                        background: #000;
+                        color:$textColor;
+                    }
+                    .list-categ{
+                        display:none;
+                        ul{
+                            list-style-type: square;
+                            color:$textColor2;
+                            cursor:pointer;
+                            font-size:.9rem;
+                            position: relative;
+                            overflow: hidden;
+                            padding-bottom: 10px;
+                            border-bottom: 1px solid $borderColor;
+                            width:100%;
+                            // height:25px;//animiren weiter;
+
+                            .ul-name{
+                                @extend %displayFlexRow;
+                                justify-content: space-between;
+                                p{
+                                    font-size:.9rem;
+                                    color:$footerColor;
+                                    width:90%;
+                                }
+                                .plus{
+                                    color:#000;
+                                    font-size:.9rem;
+                                    font-weight: bold;
+                                    transition: all .5s linear;
+                                }
+                            }
+                            li{
+                                font-size:.9rem;
+                                color:$btnColor;
+                                display:none;
+                                span{
+                                    color:$textColor2;
+                                    font-size:.9rem;
+                                    width:100%;
+                                    display:inline-block;
+                                    &:hover{
+                                        color:$footerColor;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .filter{
+                        display:none;
+                        .range{
+                            margin-bottom:10px;
+                            input{
+                                width:100%;
+                                appearance: none;
+                                background:$borderColor;
+                                height:4px;
+                                cursor:pointer;
+                                &::-webkit-slider-thumb{
+                                    border-radius:50%;
+                                    appearance: none;
+                                    width:15px;
+                                    height:15px;
+                                    background:$btnColor;
+                                }
+                            }
+                        }
+                        .filter-btn{
+                            @extend %displayFlexRow;
+                            justify-content:space-between;
+                            p{
+                                font-size:.75rem;
+                                .out{
+                                    font-size:.75rem;
+                                }
+                            }
+                            .btn{
+                                width:4rem;
+                                height:1.5rem;
+                                background:$btnColor;
+                                text-align: center;
+                                @extend %displayFlexRow;
+                                justify-content:center;
+                                cursor:pointer;
+                                p{color:$textColor;}
+                                &:active{
+                                    transform:scale(1.03)
+                                }
+                            }
+                        }
+                        .yoursize{
+                            .text{font-size:.75rem; margin:10px;}
+                            .select-size{
+                                @extend %displayFlexRow;
+                                .fil-size{
+                                    @extend %displayFlexRow;
+                                    justify-content:center;
+                                    margin-right:5px;
+                                    width:1.3rem;
+                                    height:1.3rem;
+                                    background:$borderColor;
+                                    cursor:pointer;
+                                    p{
+                                        font-size:.75rem;
+                                        color:$footerColor;
+                                    }
+                                    &:active{
+                                        background:$btnColor;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .onsale{
+                    margin-top:20px;
+                    cursor:pointer;
+                    h1{
+                        font-size:.9rem;
+                        padding:4px 10px;
+                        background: #000;
+                        color:$textColor;
+                    }
+                    .sale-item-wrapp{display:none;}
+                    .sale-item-list{
+                        
+                        @extend %displayFlexRow;
+                        align-items:flex-start;
+                        margin:10px 0;
+                        .inm-item{
+                            width:5rem;
+                            height:8rem;
+                            background:$borderColor;
+                            margin-right:5px;
+                        }
+                        p{
+                            font-size:.9rem;
+                            color:$footerColor;
+                        }
+                    }
+                }
+                .featured{
+                    margin-top:20px;
+                    cursor:pointer;
+                    h1{
+                        font-size:.9rem;
+                        padding:4px 10px;
+                        background: #000;
+                        color:$textColor;
+                    }
+                    .featur-item-wrapp{display:none;}
+                    .featur-item-list{
+                        @extend %displayFlexRow;
+                        align-items:flex-start;
+                        margin:10px 0;
+                        .inm-item{
+                            width:5rem;
+                            height:8rem;
+                            background:$borderColor;
+                            margin-right:5px;
+                        }
+                        p{
+                            font-size:.9rem;
+                            color:$footerColor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.bg-active{
+    background: $btnColor;
+}
+.plus-rotate{
+    transition: all .3s linear;
+    transform:rotate(180deg)
+}

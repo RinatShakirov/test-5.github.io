@@ -1,0 +1,162 @@
+.footer .footer-pay, .footer .footer-service .footer-service-wrapp, .footer .footer-privacy .privacy-wrapper {
+  width: 100%;
+  max-width: 970px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.footer, .footer .footer-service, .footer .footer-privacy {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.footer .footer-service .footer-service-wrapp .service, .footer .footer-service .footer-service-wrapp .information, .footer .footer-service .footer-service-wrapp .campaigns, .footer .footer-service .footer-service-wrapp .stores, .footer .footer-service .footer-service-wrapp .social, .footer .footer-privacy .privacy-wrapper .privacy-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .footer-pay, .footer .footer-service .footer-service-wrapp, .footer .footer-service .footer-service-wrapp .service .soc, .footer .footer-service .footer-service-wrapp .information .soc, .footer .footer-service .footer-service-wrapp .campaigns .soc, .footer .footer-service .footer-service-wrapp .stores .soc, .footer .footer-service .footer-service-wrapp .social .soc, .footer .footer-privacy .privacy-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .footer-pay {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px 5px;
+}
+
+.footer .footer-pay p {
+  margin-right: 10px;
+  font-size: .9rem;
+}
+
+.footer .footer-service {
+  background: #ededed;
+}
+
+.footer .footer-service .footer-service-wrapp {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .footer-service .footer-service-wrapp .service, .footer .footer-service .footer-service-wrapp .information, .footer .footer-service .footer-service-wrapp .campaigns, .footer .footer-service .footer-service-wrapp .stores, .footer .footer-service .footer-service-wrapp .social {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 40px 0px;
+}
+
+.footer .footer-service .footer-service-wrapp .service h1, .footer .footer-service .footer-service-wrapp .information h1, .footer .footer-service .footer-service-wrapp .campaigns h1, .footer .footer-service .footer-service-wrapp .stores h1, .footer .footer-service .footer-service-wrapp .social h1 {
+  color: #544f4d;
+  font-size: .9rem;
+  margin: 5px 0;
+}
+
+.footer .footer-service .footer-service-wrapp .service a, .footer .footer-service .footer-service-wrapp .information a, .footer .footer-service .footer-service-wrapp .campaigns a, .footer .footer-service .footer-service-wrapp .stores a, .footer .footer-service .footer-service-wrapp .social a {
+  color: #949393;
+  font-size: .7rem;
+  margin: 5px 0;
+  text-decoration: none;
+}
+
+.footer .footer-service .footer-service-wrapp .service .soc .soc-s, .footer .footer-service .footer-service-wrapp .information .soc .soc-s, .footer .footer-service .footer-service-wrapp .campaigns .soc .soc-s, .footer .footer-service .footer-service-wrapp .stores .soc .soc-s, .footer .footer-service .footer-service-wrapp .social .soc .soc-s {
+  width: 100%;
+  max-width: 120px;
+}
+
+.footer .footer-service .footer-service-wrapp .service .soc .soc-s a img, .footer .footer-service .footer-service-wrapp .information .soc .soc-s a img, .footer .footer-service .footer-service-wrapp .campaigns .soc .soc-s a img, .footer .footer-service .footer-service-wrapp .stores .soc .soc-s a img, .footer .footer-service .footer-service-wrapp .social .soc .soc-s a img {
+  width: 1.6rem;
+}
+
+.footer .footer-service .footer-service-wrapp .service .soc .stamp, .footer .footer-service .footer-service-wrapp .information .soc .stamp, .footer .footer-service .footer-service-wrapp .campaigns .soc .stamp, .footer .footer-service .footer-service-wrapp .stores .soc .stamp, .footer .footer-service .footer-service-wrapp .social .soc .stamp {
+  margin-left: 20px;
+}
+
+.footer .footer-service .footer-service-wrapp .service .soc .stamp img, .footer .footer-service .footer-service-wrapp .information .soc .stamp img, .footer .footer-service .footer-service-wrapp .campaigns .soc .stamp img, .footer .footer-service .footer-service-wrapp .stores .soc .stamp img, .footer .footer-service .footer-service-wrapp .social .soc .stamp img {
+  width: 4.5rem;
+}
+
+.footer .footer-privacy {
+  background: #000000;
+  padding: 15px 0;
+}
+
+.footer .footer-privacy .privacy-wrapper {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .footer-privacy .privacy-wrapper .privacy-btn {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+.footer .footer-privacy .privacy-wrapper .privacy-btn span {
+  width: 30px;
+  height: 4px;
+  background: #fd926d;
+  display: block;
+  margin: 2px 0;
+  border-radius: 2px;
+}
+
+.footer .footer-privacy .privacy-wrapper .privacy a {
+  color: #949393;
+  text-decoration: none;
+  font-size: .7rem;
+  margin: 10px 0;
+  border-right: 1px solid #949393;
+  padding-right: 10px;
+}
+
+.footer .footer-privacy .privacy-wrapper .privacy a:last-child {
+  border: none;
+}
+
+.footer .footer-privacy .privacy-wrapper .privacy a:hover {
+  color: white;
+}
+
+.footer .footer-privacy .privacy-wrapper .link-web p {
+  color: #949393;
+  font-size: .7rem;
+  margin: 5px 0;
+  text-align: right;
+  padding: 0 5px;
+}
+/*# sourceMappingURL=footer.css.map */

@@ -1,0 +1,150 @@
+@import'../scss/variabl.scss';
+
+.header-wrapper{
+    @extend %outerWidth;
+    background: $headerColor;
+    padding:0 5px;
+    .header-inner{
+        @extend %innerWidth;
+        @extend %displayFlexRow;
+        justify-content:space-between;
+        background: $headerColor;
+        .custom-care{
+            @extend %displayFlexRow;
+            color:$textColor;
+            a{
+                color:$textColor;
+                margin-left:8px;
+                font-size:.8rem;
+                text-decoration: none;
+            }
+            span{font-size:.8rem;}
+        }
+        .my-account{
+            @extend %displayFlexRow;  
+            color:$textColor;
+            span, p{font-size:.7rem;
+            }
+            .account-wrapper{
+                @extend %displayFlexRow;
+                border-left:1px solid $summerColor;
+                border-right:1px solid $summerColor;
+                img{
+                    width:1rem;
+                    margin:11px;
+                }
+                p{
+                    margin:11px 11px 11px 0;
+                }
+            }
+            .currency{
+                @extend %displayFlexRow;
+                span{
+                    margin:11px;
+                }
+            }
+            .search-img{
+                @extend %displayFlexRow;
+                img{
+                    width:.9rem;
+                    margin:11px;
+                }
+            }
+        }
+    }
+}
+.logo-navigation-wrapper{
+    @extend %innerWidth;
+    @extend %displayFlexRow;
+    justify-content:space-between;
+    padding: 25px 0;
+    .toggle{
+        display:none;
+        width:50px;
+        height:50px;
+        position: fixed;
+        z-index:10;
+        top:25px;
+        right:0;
+        flex-direction:column;
+        align-items: center;
+        justify-content:center;
+        cursor:pointer;
+        span{
+            width:30px;
+            height:4px;
+            background:$btnColorBottom;
+            margin:2px;
+            border-radius:2px;
+        }
+    }
+    .cart-nav{
+        @extend %displayFlexRow;
+        width:100%;
+        max-width:650px;
+        .list{
+            @extend %displayFlexRow;
+            justify-content:space-between;
+            li{
+                @extend %displayFlexRow;
+                font-size:.9rem;
+                cursor:pointer;
+                margin: 0 10px;
+                span{
+                    font-size:.4rem;
+                    margin: 2px 0 0 2px;
+                }
+            }
+        }
+        .cart-menu-wrapp{
+            width:100%;
+            max-width:214px;
+            color:$cartColor;
+            margin-left:10px;
+            .cart-colection{
+                width:100%;
+                @extend %displayFlexRow;
+                justify-content: space-between;
+                border:1px solid $borderColor;
+                padding: 5px;
+                span:first-child{
+                    font-size:.7rem;
+                }
+                span:last-child{
+                    font-size:.4rem;
+                }
+            }
+            .items{
+                width:100%;
+                @extend %displayFlexRow;
+                justify-content: space-between;
+                border:1px solid $borderColor;
+                border-top:none;
+                .items-cart{
+                    padding-left: 5px;
+                }
+                .items-info{
+                    @extend %displayFlexRow;
+                    p{
+                        font-size: .7rem;
+                        padding: 5px;
+                    }
+                    p:first-child span{
+                        margin-right:5px;
+                        font-size: .7rem;
+                    }
+                    p:last-child span{
+                        margin-left:5px;
+                        padding-left:5px;
+                        font-size: .7rem;
+                        border-left: 1px solid $borderColor;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.body-scr-off{
+    overflow-y: hidden;
+}

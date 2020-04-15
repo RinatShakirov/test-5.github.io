@@ -1,0 +1,47 @@
+$headerColor:#000000;
+$btnColor:#fd926d;
+$btnColorBottom:#dd6b44;
+$textColor:white;
+$textColor2:#8f8f8f;
+$borderColor:#d6d6d6;
+$summerColor:#78645d;
+$cartColor:#949393;
+$bgSlider1:#f6f3ec;
+$footerColor:#544f4d;
+$bgEmFoo:#ededed;
+
+
+$bgPro1:#ffd5c6;
+$bgPro2:#ffcab8;;
+$bgPro3:#ffae92;
+$bgPro4:#ffa687;
+$bgPro5:#fd926d;
+
+
+%innerWidth{
+    width:100%;
+    max-width:970px;
+    margin: 0 auto;
+    position: relative;
+}
+
+%outerWidth{
+    width:100%;
+    max-width:1440px;
+    margin: 0 auto;
+    position: relative;
+}
+
+%displayFlexCol{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+%displayFlexRow{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+

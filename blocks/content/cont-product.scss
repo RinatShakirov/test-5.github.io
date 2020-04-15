@@ -1,0 +1,344 @@
+@import'../scss/variabl.scss';
+
+.main{
+    background: $textColor;
+    @extend %outerWidth;
+    .content-product{
+        background: $textColor;
+        @extend %innerWidth;
+        .seit-nav{
+           @extend %displayFlexRow;
+           padding:5px 0;
+           border-top:1px solid $borderColor;
+           border-bottom:1px solid $borderColor;
+           margin-bottom:40px;
+           p{
+               font-size: .6rem;
+               margin-left:5px;
+           }
+        }
+        .product-wrapper{
+            @extend %displayFlexRow;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            .img-prod{
+                width:100%;
+                max-width:400px;
+                .mini-img{
+                    @extend %displayFlexRow;
+                    justify-content: space-evenly;
+                    cursor:pointer;
+                }
+            }
+            .prod-info{
+                @extend %displayFlexCol;
+                align-items: flex-start;
+                justify-content: space-between;
+                width:100%;
+                max-width:475px;
+                .nav-back{
+                    width:100%;
+                    @extend %displayFlexRow;
+                    justify-content: flex-start;
+                    padding: 5px 0;
+                    border-bottom:1px solid $borderColor;
+                    cursor:pointer;
+                    img{
+                        width:.3rem;
+                        margin-right: 5px;
+                    }
+                    p{
+                        color:$headerColor;
+                        font-size:.75rem;
+                    }
+                    span{
+                        color:$btnColor;
+                        font-size:.75rem;
+                        margin-left:5px;
+                    }
+                }
+                .prod-name{
+                    p{
+                        font-size: 1.4rem;
+                        margin:20px 0;
+                    }
+                }
+                .preis-reviews{
+                    width:100%;
+                    @extend %displayFlexRow;
+                    justify-content: space-between;
+                    margin: 10px 0;
+                    .preis{
+                        @extend %displayFlexRow;
+                        font-size: 2rem;
+                        color:$btnColor;
+                        font-weight: 600;
+                    }
+                    .reviews{
+                        @extend %displayFlexRow;
+                        p{
+                            font-size: .75rem;
+                            span{
+                                margin-left:3px;
+                                font-size: .75rem;
+                            }
+                        }
+                        .rev-wrapp{
+                            @extend %displayFlexRow;
+                            margin-left:10px;
+                            span{
+                                width:10px;
+                                height:10px;
+                                border:1px solid black;
+                                margin:0 2px;
+                            }
+                        }
+                    }
+                }
+                .general-text{
+                    font-size: .75rem;
+                    color:$cartColor;
+                    text-align: justify;
+                    margin:10px 0;
+                }
+                .size-color{
+                    border-top:1px solid $borderColor;
+                    border-bottom:1px solid $borderColor;
+                    padding:10px 0;
+                    margin:10px 0;
+                    width:100%;
+                    @extend %displayFlexRow;
+                    justify-content: space-between;
+                    .size-option{
+                        width:100%;
+                        max-width:200px;
+                        select{
+                            width:100%;
+                            font-size: .75rem;
+                            padding: 5px;
+                            border:none;
+                            background: #f4f4f4;
+                            option{
+                                font-size: .75rem;
+                                padding-bottom: 2px;
+                            }
+                        }
+                    }
+                    .color-option{
+                        @extend %displayFlexRow;
+                        .color{
+                            width:1.5rem;
+                            height:1.5rem;
+                            margin-left:3px;
+                            cursor:pointer;
+                            &:first-child{
+                                background: grey;
+                            }
+                            &:nth-child(2){
+                                background: #c9c1c6;
+                            }
+                            &:nth-child(3){
+                                background: #b29b88;
+                            }
+                            &:nth-child(4){
+                                background: #968886;
+                            }
+                            &:nth-child(5){
+                                background: #cde0ef;
+                            }
+                        }
+                    }
+                }
+
+            }
+            .total-wrapp{
+                @extend %displayFlexRow;
+                justify-content: space-between;
+                width:100%;
+                .btn-total{
+                    @extend %displayFlexRow;
+                    justify-content: space-between;
+                    .btn-left, .btn-right, .zahl{
+                        width:2rem;
+                        height:2rem;
+                        background:$btnColor;
+                        margin-right:3px;
+                        padding-top: 13px;
+                        text-align:center;
+                        color:$textColor;
+                        cursor:pointer;
+                        font-size: .75rem;
+                        user-select: none;
+                    }
+                    .btn-left:active, .btn-right:active{
+                        transform:scale(1.05);
+                    }
+                }
+                .add-cart-btn{
+                    @extend %displayFlexRow;
+                    justify-content: space-evenly;
+                    width:8rem;
+                    height:2rem;
+                    background:$btnColor;
+                    cursor:pointer;
+                    user-select: none;
+                    p{
+                        color:$textColor;
+                        font-size: .75rem;
+                        padding:0 5px;
+                    }
+                    span{
+                        color:$textColor;
+                        font-size: .75rem;
+                        font-weight: 600;
+                        padding:0 5px;
+                    }
+                    &:active{
+                        transform:scale(1.02);
+                    }
+                }
+            }
+        }
+        .share{
+            width:100%;
+            @extend %displayFlexRow;
+            justify-content: space-evenly;
+            margin:20px 0;
+            padding:20px 0;
+            border-top:1px solid $borderColor;
+            border-bottom:1px solid $borderColor;
+            .social{
+                max-width:200px;
+                @extend %displayFlexRow;
+                p{
+                    max-width:100px;
+                    font-size:.6rem;
+                    margin-left:5px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        .list-info{
+            margin:20px 0;
+            .list-wrapper{
+                width:100%;
+                @extend %displayFlexRow;
+                padding:20px 0 20px 50px;
+                cursor:pointer;
+                .showed{display:none;}
+                .showed-active{
+                    transform: rotate(90deg);
+                    transition:all .5s linear;
+                }
+                .cant{
+                    width:1.5rem;
+                    height:1.5rem;
+                    border:1px solid $textColor;
+                    margin-right:10px;
+                    @extend %displayFlexRow;
+                    justify-content: center;
+                    user-select: none;
+                    background: #f2b9a4;
+                    img{
+                        width:.75rem;
+                        height:.75rem;
+                        transition:all .5s linear;
+                    }
+                }
+                P{
+                    font-size:.75rem;
+                    color:$textColor;
+                }
+                
+                &:first-child{
+                    background: $bgPro1;
+                }
+                &:nth-child(2){
+                    background: $bgPro2;
+                }
+                &:nth-child(3){
+                    background: $bgPro3;
+                }
+                &:nth-child(4){
+                    background: $bgPro4;
+                }
+                &:nth-child(5){
+                    background: $bgPro5;
+                }
+            }
+        }
+    }
+    .related-products{
+        @extend %outerWidth;
+        margin:20px 0;
+        fieldset{
+            @extend %outerWidth;
+            border:none;
+            border-top:1px solid $borderColor;
+            border-bottom:1px solid $borderColor;
+            legend{text-align:center;}
+            .related-wrapper{
+            @extend %innerWidth;
+                .products{
+                    @extend %displayFlexRow;
+                    justify-content: center;
+                    .item-wrapper{
+                        width:100%;
+                        max-width:220px;
+                        margin:5px 10px;
+                        background:$bgEmFoo;
+                        position:relative;
+                        cursor:pointer;
+                        .info{
+                            background:$bgEmFoo;
+                            @extend %displayFlexCol;
+                            justify-content: space-between;
+                            p{
+                                font-size:.7rem;
+                                margin:2px 0;
+                                color:$footerColor;
+                                span{
+                                    font-size:.7rem;
+                                }
+                                
+                            }
+                            p:nth-child(2){
+                                font-size:.9rem;
+                                color:$footerColor;
+                                span{
+                                    font-size:.9rem;
+                                }
+                            }
+                            .item-btn{
+                                width:120px;
+                                height:30px;
+                                background:$btnColor;
+                                margin-bottom:5px;
+                                padding:2px;
+                                text-align:center;
+                                color:$footerColor;
+                                cursor:pointer;
+                                user-select: none;
+                                border:none;
+                                border-bottom:2px solid $btnColorBottom;
+                                font-size:.75rem;
+                                &:active{
+                                    transform:scale(1.02)
+                                }
+                            }
+                            .active-btn{
+                                background: $btnColorBottom;
+                                color:#000;
+                            }
+                        }
+                        &:hover {
+                            transform: scale(1.03);
+                            transition:all .5s linear;
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,110 @@
+@import'../scss/variabl.scss';
+
+
+.footer{
+    @extend %outerWidth;
+    .footer-pay{
+        @extend %innerWidth;
+        @extend %displayFlexRow;
+        justify-content: center;
+        p{margin-right:10px;font-size:.9rem;}
+        padding:15px 5px;
+    }
+    .footer-service{
+        @extend %outerWidth;
+        background: $bgEmFoo;
+        .footer-service-wrapp{
+            @extend %innerWidth;
+            @extend %displayFlexRow;
+            align-items: flex-start;
+            justify-content: space-between;
+            .service,.information,.campaigns,.stores,.social{
+                @extend %displayFlexCol;
+                align-items: flex-start;
+                margin:40px 0px;
+                h1{
+                    color:$footerColor;
+                    font-size:.9rem;
+                    margin:5px 0;
+                }
+                a{
+                    color:$cartColor;
+                    font-size:.7rem;
+                    margin:5px 0;
+                    text-decoration:none;
+                }
+                .soc{
+                    @extend %displayFlexRow;
+                    .soc-s{
+                        width:100%;
+                        max-width:120px;
+                        a{
+                            img{
+                                width:1.6rem;
+                            }
+                        }
+                    }
+                    .stamp{
+                        margin-left:20px;
+                        img{
+                            width:4.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer-privacy{
+        @extend %outerWidth;
+        background: $headerColor;
+        padding: 15px 0;
+        .privacy-wrapper{
+            @extend %innerWidth;
+            @extend %displayFlexRow;
+            justify-content: space-between;
+            .privacy-btn{
+                width:50px;
+                height:50px;
+                position: relative;
+                display: none;
+                @extend %displayFlexCol;
+                justify-content: center;
+                cursor:pointer;
+                span{
+                    width:30px;
+                    height:4px;
+                    background:$btnColor;
+                    display:block;
+                    margin: 2px 0;
+                    border-radius: 2px;
+                    
+                }
+            }
+            .privacy{
+                a{
+                    color:$cartColor;
+                    text-decoration: none;
+                    font-size:.7rem;
+                    margin:10px 0;
+                    border-right:1px solid $cartColor;
+                    padding-right: 10px;
+                    &:last-child{
+                        border:none;
+                    }
+                    &:hover{
+                        color:white;
+                    }
+                }
+            }
+            .link-web{
+                p{
+                    color:$cartColor;
+                    font-size:.7rem;
+                    margin:5px 0;
+                    text-align: right;
+                    padding:0 5px;
+                }
+            }
+        }
+    }
+}
