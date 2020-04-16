@@ -5,9 +5,8 @@
 @import'../css/cont-product.css';
 @import'../css/footer.css';
 @import'../css/content-all.css';
-@import'../../OwlCarousel2-2.3.4/dist/assets/owl.carousel.css';
-/* @import'../../OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css'; */
-@import'../../OwlCarousel2-2.3.4/dist/assets/owl.theme.green.min.css';
+@import'../../dist/assets/owl.carousel.css';
+@import'../../dist/assets/owl.theme.green.min.css';
 body{
     background: white;
     display: flex;
