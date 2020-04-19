@@ -202,6 +202,8 @@
   width: 100%;
   height: 100%;
   border: none;
+  font-size: .75rem;
+  padding: 8px;
 }
 
 .main .input-email .input-email-wrapper .email-form .emailbtn .btn-inp {
@@ -286,6 +288,7 @@
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  padding-top: 10px;
 }
 
 .main .slider-items-wrapper .slider-items-inner {
@@ -311,9 +314,9 @@
 }
 
 .main .slider-items-wrapper .slider-items-inner .arrow-wrapp .arrow {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 2.3rem;
   height: 2.3rem;
   background: #f2f2f2;

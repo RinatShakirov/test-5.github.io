@@ -142,7 +142,7 @@ body{
     .main .content-wrapper .points{display:none;}
     .main .poster-wrapper{display:none;}
     .main .input-email .input-email-wrapper .email-form .email .email-inp{padding: 6px;}
-    .main .slider-items-wrapper .slider-items-inner .arrow-wrapp{display:none;}
+    .main .slider-items-wrapper .slider-items-inner{justify-content: center;}
     .main .content-wrapper .clearance-wrapper-wr .clearance-wrapper .clearance:before{
        max-width:10rem;
     }

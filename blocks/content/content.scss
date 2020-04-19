@@ -152,6 +152,8 @@
                         width:100%;
                         height:100%;
                         border:none;
+                        font-size:.75rem;
+                        padding:8px;
                     }
                 }
                 .emailbtn{
@@ -231,6 +233,7 @@
         @extend %outerWidth;
         @extend %displayFlexRow;
         user-select: none;
+        padding-top:10px;
         .slider-items-inner{
             @extend %innerWidth;
             @extend %displayFlexRow;
@@ -250,10 +253,11 @@
             }
             .arrow-wrapp{
                 @extend %displayFlexRow;
+                
                 cursor:pointer;
                 .arrow{
                     @extend %displayFlexRow;
-                    justify-content: space-between;
+                    justify-content: center;
                     width:2.3rem;
                     height:2.3rem;
                     background: #f2f2f2;

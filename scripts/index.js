@@ -117,11 +117,11 @@ $(function(){
         autoplay:true,
     });
     
-    $('.crazy-left').click(function() {
+    $('.left-1').click(function() {
         owl1.trigger('next.owl.carousel');
     })
     
-    $('.crazy-right').click(function() {
+    $('.right-1').click(function() {
         owl1.trigger('prev.owl.carousel', [300]);
     })
     //slider end
