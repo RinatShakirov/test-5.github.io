@@ -46,7 +46,7 @@ class Items{
             }
 
             itemsHtml += `
-                <div class="item-wrapper" onclick="newItem.itemShow(this,'${id}','${preis}','${size}','${name}','${img}','${color}')" data-preis="${preis}" data-size="${size}" data-category="${cat}" data-date="${date}">
+                <div class="item-wrapper" data-img="${img}" data-preis="${preis}" data-size="${size}" data-name="${name}" data-color="${color}">
                     <div class="item-img"><img src="./images/imeges__menu/${img}" alt=""></div>
                     <div class="info">
                         <p>${name}</p>
@@ -59,10 +59,6 @@ class Items{
             itemsOut.innerHTML = itemsHtml;
         });
     };
-
-    itemShow(element,id){
-       return {element, id}
-    }
 };
 
 class Toppreiss extends Items{
@@ -100,7 +96,7 @@ class Toppreiss extends Items{
             }
             
             topPreis += `
-                <div onclick="newItem.itemShow(this,'${id}','${preis}','${size}','${name}','${img}','${color}')" class="item-wrapper" data-preis="${preis}" data-size="${size}" data-category="${cat}" data-date="${date}">
+                <div class="item-wrapper" data-img="${img}" data-preis="${preis}" data-size="${size}" data-name="${name}" data-color="${color}">
                     <div class="item-img"><img src="./images/imeges__menu/${img}" alt=""></div>
                     <div class="info">
                         <p>${name}</p>
@@ -120,9 +116,11 @@ newItem.itemsRender();
 let topPreis = new Toppreiss();
 topPreis.renderTopPreis();
 
+
+
 // function load(){
 
-//         fetch('server/catalog.json')
+//         fetch('scripts/items.json')
 //         .then(res => res.json())
 //         .then(body => {
 //             ITEMS = body; 

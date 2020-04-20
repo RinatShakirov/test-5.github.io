@@ -7,10 +7,13 @@ const ITEMS = [
         "name":"MIMOSA LACE DRESS",
         "preis":76.95,
         "img":"Layer_8.png",
+        "imgtop":"",
+        "imgbottom":"",
         "cat": "dress",//data-category
         "size": ['s','xs','l','m','xl'],
         "date":"01.01.2020",
         "color":[],
+        "total":[],
     },
     {
         "id":"itm2",
@@ -21,6 +24,9 @@ const ITEMS = [
         "size": ['l','m','xl'],
         "date":"02.02.2020",
         "color":[],
+        "imgtop":"",
+        "imgbottom":"",
+        "total":[],
     },
     {
         "id":"itm3",
@@ -31,6 +37,9 @@ const ITEMS = [
         "size": ['s','xs'],
         "date":"01.01.2020",
         "color":[],
+        "imgtop":"",
+        "imgbottom":"",
+        "total":[],
     },
     {
         "id":"itm4",
@@ -41,6 +50,9 @@ const ITEMS = [
         "size": ['l'],
         "date":"02.02.2020",
         "color":[],
+        "imgtop":"",
+        "imgbottom":"",
+        "total":[],
     },
     {
         "id":"itm5",
@@ -61,6 +73,9 @@ const ITEMS = [
         "size": ['xl'],
         "date":"01.02.2020",
         "color":[],
+        "imgtop":"",
+        "imgbottom":"",
+        "total":[],
     },
     {
         "id":"itm7",
@@ -71,6 +86,9 @@ const ITEMS = [
         "size": ['s','xs','l','m','xl'],
         "date":"01.02.2020",
         "color":[],
+        "imgtop":"",
+        "imgbottom":"",
+        "total":[],
     },
     {
         "id":"itm8",
@@ -81,6 +99,9 @@ const ITEMS = [
         "size": ['xs'],
         "date":"01.01.2020",
         "color":[],
+        "imgtop":"",
+        "imgbottom":"",
+        "total":[],
     },
     {
         "id":"itm9",
@@ -91,6 +112,9 @@ const ITEMS = [
         "size": ['s','xs','l','m','xl'],
         "date":"02.02.2020",
         "color":[],
+        "imgtop":"",
+        "imgbottom":"",
+        "total":[],
     },
     {
         "id":"itm10",
@@ -101,6 +125,9 @@ const ITEMS = [
         "size": ['s','xs','l','m','xl'],
         "date":"01.01.2020",
         "color":[],
+        "imgtop":"",
+        "imgbottom":"",
+        "total":[],
     },
     {
         "id":"itm11",
@@ -111,6 +138,9 @@ const ITEMS = [
         "size": ['m'],
         "date":"01.02.2020",
         "color":[],
+        "imgtop":"",
+        "imgbottom":"",
+        "total":[],
     },
     {
         "id":"itm12",
@@ -121,5 +151,8 @@ const ITEMS = [
         "size": ['s','xs','l','m','xl'],
         "date":"02.02.2020",
         "color":[],
+        "imgtop":"",
+        "imgbottom":"",
+        "total":[],
     },
 ];

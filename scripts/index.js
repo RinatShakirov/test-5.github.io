@@ -141,8 +141,40 @@ $(function(){
     });
     //toggle menu end
 });
+
+
+
 window.addEventListener('load', ()=>{
-    function shakirovSlider(a,b,c,e){
+    
+    // function getDataAttr(){
+
+    //     let dataAttrebuts = {};
+        
+    //     let itms = document.querySelectorAll('.item-wrapper')
+
+    //     for(let itm of itms){
+            
+    //         itm.addEventListener('click', function(){
+    //             console.log(this)
+    //             let dataPreis = this.dataset.preis;
+    //             let dataName = this.dataset.name;
+    //             let dataImg = this.children[0].children[0].getAttribute('src')
+               
+    //             product.innerHTML
+                
+    //             console.log(product)
+    //         })
+            
+    //     }
+        
+    // }
+
+    
+
+
+
+/////////////////////////////////////////////////////////////////////
+    function sliderTest(a,b,c,e){
         const as = document.querySelector(`${a}`);
         const bs = document.querySelector(`${b}`);
         const cs = document.querySelector(`${c}`);
@@ -165,5 +197,5 @@ window.addEventListener('load', ()=>{
             as.style.transform = `translateX(${count}px)`;
         })
     }
-    shakirovSlider('.slider-wrapper','.arrow-left','.arrow-right',2585);
+    sliderTest('.slider-wrapper','.arrow-left','.arrow-right',2585);
 })

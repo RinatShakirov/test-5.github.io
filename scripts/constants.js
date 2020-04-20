@@ -7,3 +7,4 @@ const itemsOut = document.querySelector('.slider-wrapper');
 let itemsTop = document.querySelector('.preis-inner');
 
 let product = document.querySelector('.product-wrapp-wrapper');
+
