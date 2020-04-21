@@ -7,13 +7,12 @@ const ITEMS = [
         "name":"MIMOSA LACE DRESS",
         "preis":76.95,
         "img":"Layer_8.png",
-        "imgtop":"",
-        "imgbottom":"",
         "cat": "dress",//data-category
         "size": ['s','xs','l','m','xl'],
         "date":"01.01.2020",
-        "color":[],
+        "color":['red','blue','black','coral'],
         "total":[],
+        "imgAll":['Layer_8.png'],
     },
     {
         "id":"itm2",
@@ -23,9 +22,8 @@ const ITEMS = [
         "cat": "shorts",//data-category
         "size": ['l','m','xl'],
         "date":"02.02.2020",
-        "color":[],
-        "imgtop":"",
-        "imgbottom":"",
+        "color":['red','blue','black','coral'],
+        "imgAll":['Layer_9.png',''],
         "total":[],
     },
     {
@@ -36,9 +34,8 @@ const ITEMS = [
         "cat": "shorts",//data-category
         "size": ['s','xs'],
         "date":"01.01.2020",
-        "color":[],
-        "imgtop":"",
-        "imgbottom":"",
+        "color":['red','blue','black','coral'],
+        "imgAll":['Layer_10.png',''],
         "total":[],
     },
     {
@@ -49,9 +46,8 @@ const ITEMS = [
         "cat": "shorts",//data-category
         "size": ['l'],
         "date":"02.02.2020",
-        "color":[],
-        "imgtop":"",
-        "imgbottom":"",
+        "color":['red','blue','black','coral'],
+        "imgAll":['Layer_11.png',''],
         "total":[],
     },
     {
@@ -62,7 +58,8 @@ const ITEMS = [
         "cat": "dress",//data-category
         "size": ['s'],
         "date":"02.02.2020",
-        "color":[],
+        "color":['red','blue','black','coral'],
+        "imgAll":['Layer_17.png',''],
     },
     {
         "id":"itm6",
@@ -72,9 +69,8 @@ const ITEMS = [
         "cat": "shorts",//data-category
         "size": ['xl'],
         "date":"01.02.2020",
-        "color":[],
-        "imgtop":"",
-        "imgbottom":"",
+        "color":['red','blue','black','coral'],
+        "imgAll":['Layer_18.png',''],
         "total":[],
     },
     {
@@ -85,9 +81,8 @@ const ITEMS = [
         "cat": "shorts",//data-category
         "size": ['s','xs','l','m','xl'],
         "date":"01.02.2020",
-        "color":[],
-        "imgtop":"",
-        "imgbottom":"",
+        "color":['red','blue','black','coral'],
+        "imgAll":['Layer_19.png',''],
         "total":[],
     },
     {
@@ -98,9 +93,8 @@ const ITEMS = [
         "cat": "t-shirt",//data-category
         "size": ['xs'],
         "date":"01.01.2020",
-        "color":[],
-        "imgtop":"",
-        "imgbottom":"",
+        "color":['red','blue','black','coral'],
+        "imgAll":['Layer_20.png',''],
         "total":[],
     },
     {
@@ -111,9 +105,8 @@ const ITEMS = [
         "cat": "shorts",//data-category
         "size": ['s','xs','l','m','xl'],
         "date":"02.02.2020",
-        "color":[],
-        "imgtop":"",
-        "imgbottom":"",
+        "color":['red','blue','black','coral'],
+        "imgAll":['Layer_9.png',''],
         "total":[],
     },
     {
@@ -124,9 +117,8 @@ const ITEMS = [
         "cat": "shorts",//data-category
         "size": ['s','xs','l','m','xl'],
         "date":"01.01.2020",
-        "color":[],
-        "imgtop":"",
-        "imgbottom":"",
+        "color":['red','blue','black','coral'],
+        "imgAll":['Layer_10.png',''],
         "total":[],
     },
     {
@@ -137,9 +129,8 @@ const ITEMS = [
         "cat": "t-shirt",//data-category
         "size": ['m'],
         "date":"01.02.2020",
-        "color":[],
-        "imgtop":"",
-        "imgbottom":"",
+        "color":['red','blue','black','coral'],
+        "imgAll":['Layer_11.png',''],
         "total":[],
     },
     {
@@ -150,9 +141,8 @@ const ITEMS = [
         "cat": "dress",//data-category
         "size": ['s','xs','l','m','xl'],
         "date":"02.02.2020",
-        "color":[],
-        "imgtop":"",
-        "imgbottom":"",
+        "color":['red','blue','black','coral'],
+        "imgAll":['Layer_17.png',''],
         "total":[],
     },
 ];

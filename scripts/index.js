@@ -129,7 +129,7 @@ $(function(){
     //toggle menu
     $('.toggle').on('click', function(){
         $('body').addClass('body-scr-off');
-        $('.nav-wrapper').addClass('menu-on').on('click',function(){
+        $('.nav-wrapper').addClass('menu-on').on('click',function(e){
             if(event.target.classList.contains('list') || event.target.classList.contains('li')){
                 return false;
             }

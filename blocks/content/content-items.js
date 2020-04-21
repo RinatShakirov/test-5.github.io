@@ -31,7 +31,7 @@ class Items{
         
         let itemsHtml = ' ';
 
-        ITEMS.forEach(({id, name, preis, img, cat, size, date,color}) => {
+        ITEMS.forEach(({id, name, preis, img, cat, size,date,color,imgAll}) => {
 
             let actuText = '';
             let checkBtn = '';
@@ -46,7 +46,7 @@ class Items{
             }
 
             itemsHtml += `
-                <div class="item-wrapper" data-img="${img}" data-preis="${preis}" data-size="${size}" data-name="${name}" data-color="${color}">
+                <div class="item-wrapper" data-img="${img}" data-imgAll="${imgAll}" data-preis="${preis}" data-size="${size}" data-name="${name}" data-color="${color}">
                     <div class="item-img"><img src="./images/imeges__menu/${img}" alt=""></div>
                     <div class="info">
                         <p>${name}</p>
@@ -82,7 +82,7 @@ class Toppreiss extends Items{
             return newArray;
         }
         
-        arrPush(ITEMS).forEach(({id, name, preis, img, cat, size, date,color})=>{
+        arrPush(ITEMS).forEach(({id, name, preis, img, cat, size, date,color,imgAll})=>{
 
             let actuText = '';
             let checkBtn = '';
@@ -96,7 +96,7 @@ class Toppreiss extends Items{
             }
             
             topPreis += `
-                <div class="item-wrapper" data-img="${img}" data-preis="${preis}" data-size="${size}" data-name="${name}" data-color="${color}">
+                <div class="item-wrapper" data-img="${img}" data-imgAll="${imgAll}" data-preis="${preis}" data-size="${size}" data-name="${name}" data-color="${color}">
                     <div class="item-img"><img src="./images/imeges__menu/${img}" alt=""></div>
                     <div class="info">
                         <p>${name}</p>
